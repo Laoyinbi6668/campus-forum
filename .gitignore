@@ -1,0 +1,21 @@
+# ===== Java / Maven =====
+backend/target/
+*.class
+*.jar
+*.war
+
+# ===== 前端 / Node =====
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+npm-debug.log*
+
+# ===== IDE / 系统 =====
+.idea/
+.vscode/
+*.iml
+.DS_Store
+
+# ===== 日志 =====
+*.log
+logs/

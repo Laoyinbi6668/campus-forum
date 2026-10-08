@@ -1,0 +1,47 @@
+server:
+  port: 8080
+  servlet:
+    encoding:
+      charset: UTF-8
+      enabled: true
+      force: true
+
+spring:
+  application:
+    name: campus-forum
+
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/forum_db?useUnicode=true&characterEncoding=UTF-8&connectionCollation=utf8mb4_unicode_ci&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true&useSSL=false
+    username: your_db_user
+    password: your_db_password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+        dialect: org.hibernate.dialect.MySQLDialect
+    open-in-view: false
+
+jwt:
+  secret: replace-with-a-strong-jwt-secret
+  expiration: 86400000
+
+baidu:
+  nlp:
+    api-key: your-api-key
+    secret-key: your-secret-key
+    url: https://aip.baidubce.com/rpc/2.0/nlp/v1/sentiment_classify
+
+system:
+  warning:
+    threshold: 0.7
+    ban-count: 3
+
+logging:
+  level:
+    com.example.forum: INFO
+    org.springframework.security: WARN
