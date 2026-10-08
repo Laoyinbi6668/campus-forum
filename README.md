@@ -1,7 +1,7 @@
 # 基于情感分析的校园论坛帖子智能管理系统 —— 环境配置说明
 
 > 学号：202432110119　姓名：刘彦博　班级：软外241
-> GitHub 仓库地址：**【请在此处填写你的 GitHub 链接】**
+> GitHub 仓库地址：https://github.com/Laoyinbi6668/campus-forum
 
 本系统采用前后端分离架构：后端 Spring Boot 3.2 提供 RESTful API，前端 Vue3 + Vite，
 数据库使用 MySQL 8，情感分析能力由百度 NLP 情感分析接口提供。
